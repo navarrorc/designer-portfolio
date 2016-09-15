@@ -37,3 +37,50 @@ $on-laptop:        800px;
 
 // Import partials from the `minima` theme.
 @import "minima";
+
+
+/**
+ * Media Queries
+ **/
+@media screen and (min-width: 320px) {
+  body::before {
+    content: "320px";
+    font-family: Arial, sans-serif;
+    color: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+    margin: 2px;
+    font-size: 1rem;
+    z-index: 9999;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  body::before {
+    content: "480px";
+    color: maroon;
+  }
+}
+
+@media screen and (min-width: 620px) {
+  body::before {
+    content: "620px";
+    color: orange;
+  }
+}
+
+@media screen and (min-width: 810px) {
+  body::before {
+    content: "810px";
+    color: black;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  body::before {
+    content: "1400px";
+    color: red;
+  }
+}
